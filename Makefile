@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/19 20:41:00 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/19 21:27:00 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/22 13:27:24 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,8 +30,7 @@ NAME 	=	get_next_line.a
 	${CC} -c $< -o ${<:.c=.o} -I ${INC}
 
 ${NAME}:	${OBJS}
-		ar rc ${NAME} ${OBJS}
-		ranlib ${NAME}
+		ar rcs ${NAME} ${OBJS}
 
 all:		${NAME}
 
